@@ -16,6 +16,21 @@
 #####Python package
 Clone this repo locally and follow the instructions above to set up that directory for building a lambda deploy package so that your pip installs are within the root level of the project.  Pip install the datadog library.  The others should get installed when you do that.
 
+## Package for AWS Lambda
+
+[See Deploying a Python Package on Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-python-how-to-create-deployment-package.html)
+
+Make sure running python 2.7
+
+`cd InstaClustr-to-Datadog-Lambda`
+`mkdir package`
+`pip install datadog --target .`
+`pip install requests --target .`	
+`zip -r9 ../function.zip .`
+
+upload to aws
+`aws lambda update-function-code --function-name python27 --zip-file fileb://function.zip`
+
 #####Configuration file
 All the configuration items are in `configuration.json` You'll need your instaclustr login, api key, and cluster id(s) to monitor.  These are all available from the instclustr dashboard.  You'll also need a datadog api key and app key, which can be found/made in the datadog dashboard.
 
