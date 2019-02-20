@@ -22,11 +22,13 @@ Clone this repo locally and follow the instructions above to set up that directo
 
 Make sure running python 2.7
 
-`cd InstaClustr-to-Datadog-Lambda`
-`mkdir package`
-`pip install datadog --target .`
-`pip install requests --target .`	
-`zip -r9 ../function.zip .`
+```
+cd InstaClustr-to-Datadog-Lambda
+mkdir package
+pip install datadog --target .
+pip install requests --target .	
+zip -r9 ../function.zip .
+```
 
 upload to aws
 `aws lambda update-function-code --function-name python27 --zip-file fileb://function.zip`
