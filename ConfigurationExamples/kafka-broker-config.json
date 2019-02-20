@@ -1,0 +1,28 @@
+{
+  "kafka_metrics_first_half": {
+    "cluster_id": "<ic_cluster_id_1>",
+    "env": "<environment_tag_1>",
+    "metrics_list": "k::kafkaBrokerState,k::underReplicatedParititions,k::activeControllerCount,k::offlinePartitions,k::leaderElectionRate,k::uncleanLeaderElectionsPerSec,k::produceRequestTime,k::fetchConsumerRequestTime,k::fetchFollowerRequestTime,k::brokerTopicMessagesIn,k::brokerTopicBytesIn,k::brokerTopicBytesOut,k::produceMessageConversionsPerSec,k::fetchMessageConversionsPerSec,k::isrShrinkRate,k::isrExpandRate,k::underMinIsrPartitions,k::partitionCount,k::leaderCount,k::producePurgatorySize",
+    "dd_options": {
+      "api_key": "<data_dog_api_key>",
+      "app_key": "<data_dog_app_key>"
+    },
+    "ic_options": {
+      "user_name": "<ic_login>",
+      "api_key": "<ic_api_key>"
+    }
+  },
+  "kafka_metrics_second_half": {
+    "cluster_id": "<ic_cluster_id_2",
+    "env": "<environment_tag_2>",
+    "metrics_list": "k::fetchPurgatorySize,k::networkProcessorAvgIdlePercent,k::requestHandlerAvgIdlePercent,k::replicationLag,k::slaProducerMessagesProcessed,k::slaProducerLatencyMs,k::slaProducerErrors,k::slaConsumerLatency,k::slaConsumerRecordsProcessed",
+    "dd_options": {
+      "api_key": "<data_dog_api_key>",
+      "app_key": "<data_dog_app_key>"
+    },
+    "ic_options": {
+      "user_name": "<ic_login>",
+      "api_key": "<ic_api_key>"
+    }
+  }
+}

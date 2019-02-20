@@ -1,0 +1,15 @@
+{
+  "monitor1": {
+    "cluster_id": "<ic_cluster_id_1>",
+    "env": "<environment_tag_1>",
+    "metrics_list": "kt::<topic>::messagesInPerTopic::mean_rate,kt::<topic>::messagesInPerTopic::one_minute_rate,kt::<topic>::bytesOutPerTopic::mean_rate,kt::<topic>::bytesOutPerTopic::one_minute_rate,kt::<topic>::bytesInPerTopic::mean_rate,kt::<topic>::bytesInPerTopic::one_minute_rate,kt::<topic>::fetchMessageConversionsPerTopic::count,kt::<topic>::fetchMessageConversionsPerTopic::mean_rate,kt::<topic>::fetchMessageConversionsPerTopic::one_minute_rate,kt::<topic>::produceMessageConversisonsPerTopic::count,kt::<topic>::produceMessageConversisonsPerTopic::mean_rate,kt::<topic>::produceMessageConversisonsPerTopic::one_minute_rate,kt::<topic>::failedFetchMessagePerTopic::count,kt::<topic>::failedFetchMessagePerTopic::mean_rate,kt::<topic>::failedFetchMessagePerTopic::one_minute_rate,kt::<topic>::failedProduceMessagePerTopic::count,kt::<topic>::failedProduceMessagePerTopic::mean_rate,kt::<topic>::failedProduceMessagePerTopic::one_minute_rate",
+    "dd_options": {
+      "api_key": "<data_dog_api_key>",
+      "app_key": "<data_dog_app_key>"
+    },
+    "ic_options": {
+      "user_name": "<ic_login>",
+      "api_key": "<ic_api_key>"
+    }
+  }
+}
